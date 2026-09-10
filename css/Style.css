@@ -66,7 +66,7 @@ nav ul li a:hover {
 }
 
 .presentación {
-    background: linear-gradient(135deg, #1f122b 0%, #0c0512 100%); /* Fondo oscuro morado */
+    background: linear-gradient(135deg, #1f122b 0%, #0c0512 100%); 
     color: #ffffff;
     padding: 80px 5%;
     text-align: center;
