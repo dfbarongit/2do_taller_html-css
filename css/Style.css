@@ -1,0 +1,309 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    color: #651d74;
+    font-family: cursive;
+    text-shadow: 0px 0px 10px #bc00b9;
+    position: relative;
+    margin: 12px;
+}
+
+div img {
+    width: 30px;
+    height: 30px;
+    margin: 12px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 12px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #651d74; /* Combina con tu h2 */
+}
+
+.presentación {
+    background: linear-gradient(135deg, #1f122b 0%, #0c0512 100%); 
+    color: #ffffff;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.presentación-content h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 8px #bc00b9;
+}
+
+.presentación-content p {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.presentación-content form {
+    display: inline-flex;
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0px 4px 15px rgba(188, 0, 185, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.presentación-content input, 
+.presentación-content select {
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    background: transparent;
+}
+
+.presentación-content input {
+    flex: 2;
+    color: #1e293b;
+}
+
+.presentación-content select {
+    flex: 1;
+    border-left: 1px solid #e2e8f0;
+    color: #64748b;
+    cursor: pointer;
+}
+
+.presentación-content button {
+    background-color: #651d74;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.presentación-content button:hover {
+    background-color: #bc00b9;
+    box-shadow: 0px 0px 10px #bc00b9;
+}
+
+.catalogo-container {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.catalogo-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #1e293b;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.car-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 20px rgba(101, 29, 116, 0.15);
+}
+
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #f1f5f9;
+}
+
+.car-info {
+    padding: 20px;
+}
+
+.car-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+
+.precio {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #651d74;
+    margin-bottom: 8px;
+}
+
+.especificaciones {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.btn-details {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-details:hover {
+    background-color: #651d74;
+}
+
+.benefic {
+    background-color: #f1f5f9;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.benefic h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #1e293b;
+    font-family: inherit; 
+    text-shadow: none;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.benefit-item {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+.benefit-item h3 {
+    font-size: 1.2rem;
+    color: #651d74;
+    margin-bottom: 12px;
+}
+
+.benefit-item p {
+    color: #64748b;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.footer {
+    background-color: #0c0512;
+    color: #94a3b8;
+    text-align: center;
+    padding: 25px 5%;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 5px;
+    }
+    
+    .presentación-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .presentación-content form {
+        flex-direction: column;
+    }
+    
+    .presentación-content select {
+        border-left: none;
+        border-top: 1px solid #e2e8f0;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.car-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.car-grid .car-card:nth-child(1) { animation-delay: 0.1s; }
+.car-grid .car-card:nth-child(2) { animation-delay: 0.2s; }
+.car-grid .car-card:nth-child(3) { animation-delay: 0.3s; }
+
