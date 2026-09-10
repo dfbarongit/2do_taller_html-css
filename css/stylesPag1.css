@@ -15,17 +15,17 @@ header {
   border-bottom: 4px solid #ff007f;
 }
 
-header .indices {
+.indices {
   display: flex;
   list-style: none;
   padding: 20px;
 }
 
-header .indices li {
+.indices li {
   margin-right: 25px;
 }
 
-header .indices li:first-child {
+.indices li:first-child {
   margin-right: auto;
 }
 
