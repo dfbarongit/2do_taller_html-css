@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f4f6f9;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  padding: 5px 20px;
+  font-size: 0.85rem;
+}
+
+.top-bar a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.top-bar a:hover {
+  color: #121a82;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  background-color: #121a82;
+  border-bottom: 4px solid #ffd500;
+}
+.logo {
+  color: #fff700;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+.logo span{
+  color: #ffffff;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px;
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+  padding-right: 15px;
+}
+.logoCelu {
+  color: #00f0ff;
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px;
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+  padding-right: 15px;
+}
+
+.indices {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 15px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.menus {
+  color: #fff;
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+.menus:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.menus:hover, .logoCelu:hover {
+  color: #ffd500;
+}
+
+.comienzo {
+  background: linear-gradient(to right, #1f1fbf, #1f1f6a);
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "dsc1 dsc1 dst1 dst1"
+    "dsc1 dsc1 dst1 dst1"
+    "dsc2 dsc2 dsc2 dsc2"
+    "p1 p1 p1 p1";
+}
+
+.desc1 {
+  background-color: #121a82;
+  grid-area: dsc1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  padding: 30px;
+  color: white;
+}
+
+.desc1 h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #ffd500;
+}
+
+.destacados1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffd500;
+  grid-area: dst1;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 20px;
+  gap: 15px;
+  color: #121a82;
+  text-align: center;
+}
+
+.destacados1 img {
+  max-width: 99%;
+}
+
+.desc2 {
+  background-color: transparent;
+  grid-area: dsc2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 20px 0 0 0;
+  border-bottom: 2px solid #ffd500;
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.comienzo .productos {
+  grid-area: p1;
+}
+
+.main {
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.beneficios-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.beneficios-section div,
+.beneficios-section p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.beneficios {
+  display: flex;
+  background-color: #d8d8d8;
+  border-radius: 5px;
+  align-items: center;
+  height: 50px;
+}
+
+.beneficios:hover {
+  background-color: #f9c332;
+}
+
+.beneficios img {
+  height: 70px;
+  width: auto;
+}
+
+.tarjeta-promo {
+  position: relative;
+  background-color: #fff;
+  min-height: 140px;
+  border-radius: 15px;
+  padding: 20px 140px 20px 20px;
+  text-align: left;
+  flex-grow: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.tarjeta-promo.a {
+  background: linear-gradient(to right, #58307c, #9d56df);
+}
+
+.tarjeta-promo.b {
+  background: linear-gradient(to right, #357f87, #57c8df);
+}
+
+.tarjeta-promo.c {
+  background: linear-gradient(to right, #094a81, #107dde);
+}
+
+.texto-promo h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.texto-promo p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tarjeta-promo img {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  height: 170px;
+  z-index: 1;
+}
+
+.btn-amarillo {
+  position: absolute;
+  bottom: -15px;
+  left: 20px;
+  background-color: #ffc107;
+  color: #121a82;
+  text-decoration: none;
+  padding: 8px 24px;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  transition-property: all;
+  transition-duration: 100ms;
+  transition-timing-function: linear;
+}
+.btn-amarillo:hover {
+  background-color: #cb9902;
+}
+
+.tarjeta-producto {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  max-width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #121a82;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-producto {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.info-producto {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-end;
+  text-align: left;
+}
+
+.tarjeta-producto h4 {
+  color: #333;
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+}
+
+.contenedor-precio-viejo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.precio-viejo {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.descuento {
+  background-color: #121a82;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.precio-nuevo {
+  color: #121a82;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+}
+
+.resena {
+  font-style: italic;
+  color: #666;
+  font-size: 0.85rem;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.mas-informacion {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  gap: 20px;
+}
+
+.info-item {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.info-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.info-item h3 {
+  color: #121a82;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.info-item p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.medios-pago {
+  background-color: #e8ebf2;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 20px;
+}
+
+.medios-pago h2 {
+  color: #121a82;
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+}
+
+.iconos-pago {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.iconos-pago img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.iconos-pago img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #121a82;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.footer-col h3 {
+  color: #ffd500;
+  margin-bottom: 15px;
+}
+
+.footer-col p,
+.footer-col a {
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.footer-col a:hover {
+  color: #ffd500;
+  text-decoration: underline;
+}
