@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARROS CSFM</title>
+    <link rel="stylesheet" href="css/Style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo-area">
+          <img src="imagenes/menu-icon.png" alt="menu-pagina" />
+          <h1>CARROS CSFM</h1>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="main-wrapper clearfix">
+        <main class="main" id="inicio">
+          <div class="presentacion-content">
+            <h2>Los mejores carros que puedes encontrar</h2>
+            <p>Carros de calidad, certificados a tu mano</p>
+
+            <div class="search-container clearfix">
+              <form action="search-box" class="search-form">
+                <input type="text" placeholder="Toyota" />
+                <select>
+                  <option value="Año 2026">Año 2026</option>
+                  <option value="Año 2025">Año 2025</option>
+                  <option value="Año 2024">Año 2024</option>
+                  <option value="Año 2023">Año 2023</option>
+                  <option value="Año 2022">Año 2022</option>
+                </select>
+                <button type="submit">Buscar</button>
+              </form>
+
+              <form action="search-box" class="search-form">
+                <input type="text" placeholder="Mazda" />
+                <select>
+                  <option value="Año 2026">Año 2026</option>
+                  <option value="Año 2025">Año 2025</option>
+                  <option value="Año 2024">Año 2024</option>
+                  <option value="Año 2023">Año 2023</option>
+                  <option value="Año 2022">Año 2022</option>
+                </select>
+                <button type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </main>
+
+        <aside class="sidebar">
+          <section id="catalogo" class="catalogo-container">
+            <h2 class="section-title">Modelos destacados</h2>
+
+            <div class="car-grid clearfix">
+              <article class="car-card">
+                <img src="imagenes/carro1.png" alt="Modelo del carro" />
+                <div class="car-info">
+                  <h3>Modelo Gasolina</h3>
+                  <p class="precio">$45.000 pesos</p>
+                  <p class="especificaciones">0 km • Automático • Gasolina</p>
+                  <a href="carro-gasolina.html" class="btn-details"
+                    >Ver Detalles</a
+                  >
+                </div>
+              </article>
+
+              <article class="car-card">
+                <img src="imagenes/carro2.png" alt="Modelo del carro" />
+                <div class="car-info">
+                  <h3>Modelo Eléctrico</h3>
+                  <p class="precio">$45.000 pesos</p>
+                  <p class="especificaciones">0 km • Automático • Eléctrico</p>
+                  <a href="carro-electrico.html" class="btn-details"
+                    >Ver Detalles</a
+                  >
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section id="beneficios" class="benefic">
+            <h2 class="section-title">¿Por qué comprar en Carros CSFM?</h2>
+            <div class="benefits-grid">
+              <div class="benefit-item">
+                <h3>Garantía Extendida</h3>
+                <p>
+                  Todos nuestros carros cuentan con 1 año de garantía mecánica.
+                </p>
+              </div>
+              <div class="benefit-item">
+                <h3>Financiación a tu Medida</h3>
+                <p>
+                  Trabajamos con los principales bancos para darte la mejor
+                  tasa.
+                </p>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </div>
+
+      <footer class="footer">
+        <p>© 2026 Carros CSFM. Todos los derechos reservados.</p>
+      </footer>
+    </div>
+  </body>
+</html>
